@@ -1,0 +1,226 @@
+:root {
+    --primary: #0b1f3a;       /* Main navy */
+    --primary-dark: #06152a;  /* Dark navy */
+    --secondary: #2f80ed;     /* Blue accent */
+    --accent: #f5b800;        /* Gold accent */
+    --white: #ffffff;
+    --text: #475467;
+    --light: #f1f3f5;
+    --border: #e3eae6;
+    --eyebrow: #2f80ed;
+    --heading: #0b1f3a;
+    --paragraph: #475467;
+    --stats-bg: #e3e7ed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0b1f3a, #6c63ff);
+    min-height: 100vh;
+    color: #333;
+}
+/* Login Hero Section */
+#login-hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+/* Login Container */
+.login-container {
+    width: 100%;
+    max-width: 430px;
+}
+/* Login Card */
+.login-card {
+    background-color: #ffffff;
+    padding: 40px 35px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Circular Lock Icon */
+.login-icon {
+    width: 75px;
+    height: 75px;
+    background-color: #eef0ff;
+    color: #4361ee;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+}
+.login-icon i {
+    font-size: 30px;
+}
+
+/* Welcome Heading */
+.login-card h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #172554;
+}
+
+/* Introductory Paragraph */
+.login-card > p:not(.eyebrow):not(.signup-text) {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 28px;
+    line-height: 1.6;
+}
+
+/* Email and Password Containers */
+.email-container,
+.password-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #f8fafc;
+    border: 1px solid #dbe1ea;
+    border-radius: 8px;
+    padding: 0 14px;
+    margin-bottom: 18px;
+    height: 52px;
+}
+
+.email-container > i,
+.password-container > i:first-child {
+    color: #7b8494;
+    font-size: 16px;
+}
+
+/* Input Fields */
+.email-container input,
+.password-container input {
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Password Visibility Icon */
+#toggle-password {
+    cursor: pointer;
+    color: #7b8494;
+    font-size: 16px;
+}
+
+/* Remember Me and Forgot Password */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0 25px;
+    font-size: 12px;
+}
+
+.remember-forgot label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #555;
+}
+
+#remember-me {
+    accent-color: #4361ee;
+    cursor: pointer;
+}
+
+.remember-forgot a {
+    color: #4361ee;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Login Button */
+#login {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4361ee;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    transition: background-color 0.3s ease;
+}
+
+#login:hover {
+    background-color: #3048c5;
+}
+
+/* OR Divider */
+.eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #8b93a1;
+    font-size: 12px;
+    margin: 25px 0;
+}
+
+.eyebrow span {
+    height: 1px;
+    flex: 1;
+    background-color: #e1e5eb;
+}
+
+/* Sign Up Paragraph */
+.signup-text {
+    font-size: 13px;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.signup-text a {
+    color: #4361ee;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    #login-hero {
+        padding: 20px 15px;
+    }
+
+    .login-card {
+        padding: 35px 22px;
+    }
+
+    .login-card h2 {
+        font-size: 25px;
+    }
+
+    .remember-forgot {
+        font-size: 11px;
+    }
+}

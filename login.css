@@ -231,7 +231,7 @@ body {
 
 /* Sign Up Hero Section */
 #sign-up-hero {
-    background-image: linear-gradient(135deg, rgba(20, 25, 30, 0.75), rgba(0, 20, 0, 0.45)), url("image/yosemite-mountain.jpg");;
+    background-image: linear-gradient(135deg, rgba(20, 25, 30, 0.75), rgba(0, 20, 0, 0.45)), url("yosemite-mountain.jpg");;
     min-height: 100vh;
     display: flex;
     justify-content: center;
